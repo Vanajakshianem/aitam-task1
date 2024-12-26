@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid task</title>
+    <style>
+        .container{
+            background-color: blue;
+            width: 700px;
+            height:350px;
+            margin-top:50px;
+            display: grid;
+            grid-template:columns;
+            grid-template-rows: repeat(2,100px);
+            grid-template-columns: repeat(4,100px);
+            gap:20px;
+        }
+        .box1{
+            background-color: azure;
+            margin:10px;
+            width:150px;
+            height:150px;
+            
+        }
+        .box2{
+            background-color: azure;
+            margin-left:50px;
+            margin-top:10px;
+            width:140px;
+            height:60px;  
+        }
+        .box3{
+            background-color: azure;
+            margin-left:80px;
+            margin-top:10px;
+            width:350px;
+            height:60px;
+        }
+        .box4{
+            background-color: azure;
+            margin-top:180px; 
+            margin-left:120px;
+            width:190px;
+            height:65px;
+
+        }
+        .box5{
+            background-color: azure;
+            margin-top:50px;
+            margin-left:10px;
+            width:150px;
+            height:70px;
+
+        }
+        .box6{
+            background-color: azure;
+            margin-left:50px;
+            margin-top:-30px;
+            width:140px;
+            height:67px;
+
+        }
+        .box7{
+            background-color: azure;
+            margin-left:80px;
+            margin-top:-30px;
+            width:150px;
+            height:155px;
+        }
+        .box8{
+            background-color: azure;
+            margin-left:120px;
+            margin-top:-30px;
+            width:190px;
+            height:75px;
+        }
+        .box9{
+            background-color: azure;
+            margin-top:10px;
+            margin-left:10px;
+            width:150px;
+            height:70px;
+        }
+        .box10{
+            background-color: azure;
+            margin-left:50px;
+            margin-top:-70px;
+            width:140px;
+            height:150px;
+        }
+        .box11{
+            background-color: azure;
+            margin-left:80px;
+            margin-top:20px;
+            width:350px;
+            height:60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS grid examples</h1>
+    <div class="container">
+        <div class="box1">masonry 1</div>
+        <div class="box2">Flexible Breadth</div>
+        <div class="box3">DOM order</div>
+        <div class="box4">responsive</div>
+        <div class="box5">Fluid</div>
+        <div class="box6">Mansory ||</div>
+        <div class="box7">Overlap</div>
+        <div class="box8">Negative Space</div>
+        <div class="box9">Mansory |||</div>
+        <div class="box10">Named Tracks</div>
+        <div class="box11">Explicitly placed</div>
+
+    </div>
+</body>
+</html>
