@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 10px;
+            margin: 15px;
+        }
+
+        .gallery img {
+            flex: 1 1 calc(25% - 10px);
+            max-width: 85%;
+            border-radius: 18px;
+            transition: opacity 0.3s ease; 
+            height:200px;
+            width:100px;
+        }
+
+        .gallery img:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 600px) {
+            .gallery img {
+                flex: 1 1 calc(100% - 10px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="hair.jpg" alt="Image 1">
+        <img src="hair.jpg" alt="Image 2">
+        <img src="hair.jpg" alt="Image 3">
+        <img src="hair.jpg" alt="Image 4">
+        <img src="hair.jpg" alt="Image 5">
+        <img src="hair.jpg" alt="Image 6">
+        <img src="hair.jpg" alt="Image 7">
+        <img src="hair.jpg" alt="Image 8">
+    </div>
+</body>
+</html>
