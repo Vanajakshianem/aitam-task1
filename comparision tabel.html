@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .comparison-table {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin: 16px;
+        }
+
+        .product {
+            flex: 1 1 calc(25% - 32px); /* Adjust for four products per row with margin */
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product h3 {
+            margin: 0 0 16px 0;
+            font-size: 1.25em;
+            text-align: center;
+        }
+
+        .feature {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .feature span {
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="comparison-table">
+        <div class="product">
+            <h3>Product A</h3>
+            <div class="feature"><span>Price:</span> $100</div>
+            <div class="feature"><span>Availability:</span> In Stock</div>
+            <div class="feature"><span>Ratings:</span> 4.5/5</div>
+        </div>
+
+        <div class="product">
+            <h3>Product B</h3>
+            <div class="feature"><span>Price:</span> $120</div>
+            <div class="feature"><span>Availability:</span> Limited</div>
+            <div class="feature"><span>Ratings:</span> 4.0/5</div>
+        </div>
+
+        <div class="product">
+            <h3>Product C</h3>
+            <div class="feature"><span>Price:</span> $90</div>
+            <div class="feature"><span>Availability:</span> Out of Stock</div>
+            <div class="feature"><span>Ratings:</span> 4.8/5</div>
+        </div>
+
+        <div class="product">
+            <h3>Product D</h3>
+            <div class="feature"><span>Price:</span> $110</div>
+            <div class="feature"><span>Availability:</span> In Stock</div>
+            <div class="feature"><span>Ratings:</span> 4.3/5</div>
+        </div>
+    </div>
+</body>
+</html>
